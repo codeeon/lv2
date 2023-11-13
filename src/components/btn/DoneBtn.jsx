@@ -1,4 +1,4 @@
-const DoneBtn = ({ clickDoneButtonHandler, task }) => {
+const DoneBtn = ({ clickDoneButtonHandler, task, children }) => {
   return (
     <button
       className='btn green'
@@ -6,7 +6,7 @@ const DoneBtn = ({ clickDoneButtonHandler, task }) => {
         clickDoneButtonHandler(task.id);
       }}
     >
-      완료
+      {children}
     </button>
   );
 };

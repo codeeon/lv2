@@ -1,5 +1,6 @@
 import DeleteBtn from './btn/DeleteBtn';
 import DoneBtn from './btn/DoneBtn';
+import { Link } from 'react-router-dom';
 
 const ContentsWorking = ({ todo, clickDeleteButtonHandler, clickDoneButtonHandler }) => {
   return (
@@ -13,11 +14,14 @@ const ContentsWorking = ({ todo, clickDeleteButtonHandler, clickDoneButtonHandle
           .map((task) => {
             return (
               <div key={task.id} className='content'>
+                <Link to={`/${task.id}`}>상세보기</Link>
                 <div className='contentTitle'>{task.title}</div>
                 <div>{task.text}</div>
                 <div className='contentBtns'>
                   <DeleteBtn clickDeleteButtonHandler={clickDeleteButtonHandler} task={task} />
-                  <DoneBtn clickDoneButtonHandler={clickDoneButtonHandler} task={task} />
+                  <DoneBtn clickDoneButtonHandler={clickDoneButtonHandler} task={task}>
+                    완료
+                  </DoneBtn>
                 </div>
               </div>
             );
