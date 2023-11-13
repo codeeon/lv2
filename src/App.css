@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.bgStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 1200px;
+  min-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  border: solid 1px rgb(211, 211, 211);
+}
+.headerPadding {
+  padding: 20px 20px;
+}
+.headerInput,
+.createBtn {
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerLeft {
+  margin-left: 30px;
+}
+.headerRight {
+  margin-right: 30px;
+}
+.headerCreate {
+  height: 100px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  margin: 0px 15px 20px 15px;
+  border: none;
+}
+.createInput {
+  width: 250px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.createBtn {
+  background-color: #117374;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 30px;
+}
+.todos {
+  display: flex;
+}
+.content {
+  width: 270px;
+  height: 150px;
+  margin: 20px 0px 20px 30px;
+  border: solid 4px #117374;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.contentTitle {
+  font-size: 25px;
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentBtns {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  background-color: white;
+  border: solid 2px;
+}
+.red {
+  border-color: #f75442;
+}
+.green {
+  border-color: #357d27;
 }
