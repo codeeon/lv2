@@ -14,7 +14,7 @@ const ContentsDone = ({ todo, clickDeleteButtonHandler, clickDoneButtonHandler }
           .map((task) => {
             return (
               <div key={task.id} className='content'>
-                <Link to={`/id${task.id}`}>상세보기</Link>
+                <Link to={`/${task.id}`}>상세보기</Link>
                 <div className='contentTitle'>{task.title}</div>
                 <div>{task.text}</div>
                 <div className='contentBtns'>
